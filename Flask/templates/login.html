@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+{% from "includes/formhelpers.html" import render_field %}
+<html>
+    <body style="background-color:rgb(40,40,40);">
+        <h1 style="color:white">
+         
+    <h3 style="color:white"> The things you own end up owning you</h3>
+    <h4 style="color:white"> -Tyler Durden</h4>
+    <img src="https://i.pinimg.com/736x/05/1f/79/051f79e06b7fed6fb935851d7882a5e6.jpg" jsaction="VQAsE" class="r48jcc pT0Scc iPVvYb" style="max-width: 640px; width: 415px; height: 415px; margin: 0px;" alt="Fight Club (1999) | Tyler Durden | Clube da luta, Citações abençoadas,  Fotos de filmes" jsname="kn3ccd" aria-hidden="false">
+    
+    <form action="" method="post"
+
+
+    {{ render_field(form.username,class = 'form-control') }}
+    {{ render_field(form.password,class = 'form-control') }}
+
+    <button class="button is-primary is-small  btn-dark">Save</button>
+      
+   
+
+    
+    </form>
+
+{% endblock body %}
